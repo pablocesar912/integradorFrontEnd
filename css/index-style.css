@@ -1,0 +1,121 @@
+body{
+    font-family: sans-serif;
+    margin: 0%;
+    background-color: burlywood;
+}
+
+
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: cadetblue;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+
+nav a{
+    font-weight: 600;
+    padding-right: 30px;
+    justify-content:space-between;
+    text-decoration: none;
+    color: black;
+    font-size: l20px;
+}
+nav a:hover{
+    color: wheat;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.logo img{
+    height: 100px;
+    margin-right: 10px;
+}
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+.nombre-empresa{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 36px;
+    color: white;
+    font-style: oblique;
+}
+
+/* INICIO BANNER */
+.banner {
+    display: flex;
+    aspect-ratio: 16/9;
+    background-image: url("https://todoshoes.com.ar/wp-content/uploads/2021/12/Ibiza-trendy-moda-fashion-Histericomplements-and-Shoes-slider-768x360.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    animation: banner 4s infinite;
+}
+
+.banner__title {
+    font-size: 48px;
+    font-style: oblique;
+    color: white;
+}
+
+@keyframes banner {
+    from {
+        background-size: 100% 100%;
+    }
+
+    to {
+        background-size: 200% 200%;
+    }
+}
+
+/* FIN BANNER */
+
+/*INICIO FOOTER*/ 
+footer {
+    background-color: cadetblue;
+    text-align: center;
+    color:black;
+    padding: 10px;
+  }
+
+.redes {
+    background-color: cadetblue;
+    padding: 24px;
+} 
+.redes p {
+color: black;
+font-size: 24px;
+text-align: center;
+}
+.redes ul {
+    display: flex;
+    margin: 0 auto;
+    gap: 24px;
+    width: max-content;
+    padding: 0;
+}
+.redes li {
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+.redes a {
+    color: black;
+}
+.redes a:hover{
+    color: white;
+    transition: color 0.5s;
+}
+/*FIN FOOTER*/
